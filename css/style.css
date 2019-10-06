@@ -79,13 +79,6 @@
 	font-weight: 400;
 }
 
-/* * {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
-} */
-
-
 header {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
@@ -108,7 +101,6 @@ a {
 	overflow: hidden;
 }
 
-/* ================== [HEADER] ================== */
 .header-menu-checkbox,
 .header-menu-btn {
 	display: none;
@@ -471,7 +463,6 @@ a {
 	background-color: #000000;
 }
 
-/* ================== [SERVICES] ================== */
 .services {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -549,7 +540,6 @@ a {
 	background-color: #c7b299;
 }
 
-/* ================== [REALIZATION] ================== */
 .realization {
 	min-height: 700px;
 	display: -webkit-box;
@@ -595,7 +585,6 @@ a {
 	background-position: bottom, bottom left, bottom right;
 }
 
-/* ================== [OFFER] ================== */
 .offer {
 	min-height: 150px;
 	display: -webkit-box;
@@ -682,7 +671,6 @@ a {
 	margin: auto;
 }
 
-/* ================== [PROJECTS] ================== */
 .projects {
 	display: flex;
 	width: 100%;
@@ -921,7 +909,6 @@ a {
 	background-color: #998675;
 }
 
-/* ================== [PRESENTATION] ================== */
 .presentation {
 	position: relative;
 	width: 100%;
@@ -962,12 +949,12 @@ a {
 	flex-wrap: wrap;
 }
 
-.video-cover:hover .video-btn {
-	opacity: 0.8;
+.video-btn:hover {
+	opacity: 1;
 }
 
-.video-cover:active .video-btn {
-	opacity: 0.2;
+.video-btn:active {
+	opacity: 0.6;
 }
 
 .video-btn {
@@ -984,17 +971,12 @@ a {
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-	opacity: 0.2;
+	opacity: 0.8;
 	fill: #ffffff;
 	margin: 0 0 44px 0;
 	height: 100px;
 	width: 100px;
-}
-
-.video-btn:focus {
 	outline: none;
-	-webkit-box-shadow: 0 0 3px 3px #ffffff;
-	box-shadow: 0 0 3px 3px #ffffff;
 }
 
 .video-title {
@@ -1024,7 +1006,6 @@ a {
 	text-align: center;
 }
 
-/* ================== [DEVICES] ================== */
 .devices {
 	width: 100%;
 	min-height: 695px;
@@ -1119,7 +1100,6 @@ a {
 	background-position: center;
 }
 
-/* ================== [COUNTERS] ================== */
 .counters {
 	width: 100%;
 	min-height: 300px;
@@ -1191,7 +1171,6 @@ a {
 	text-transform: uppercase;
 }
 
-/* ================== [POSTS] ================== */
 .posts {
 	display: flex;
 	width: 100%;
@@ -1415,15 +1394,14 @@ a {
 	fill: #d1d1d1;
 }
 
-/* .post-btn-icon:hover {
-	fill: #c7b299;
-} */
-
-.post-btn-icon:active {
+.post-btn-icon:hover {
 	fill: #998675;
 }
 
-/* ================== [PARTNERS] ================== */
+.post-btn-icon:active {
+	fill: #c7b299;
+}
+
 .partners {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -1480,7 +1458,6 @@ a {
 	filter: none;
 }
 
-/* ================== [FOOTER] ================== */
 .footer-top-wrapper {
 	width: 100%;
 	min-height: 508px;
@@ -1742,10 +1719,8 @@ a {
 	color: #959595;
 }
 
-/* ================== [MEDIA] ================== */
 @media (max-width: 575.98px) {
 
-	/* ==== (HEADER) ==== */
 	.container {
 		width: 100%;
 	}
@@ -1878,7 +1853,6 @@ a {
 		justify-content: center;
 	}
 
-	/* ==== (SERVICES) ==== */
 	.services {
 		width: 100%;
 		flex-wrap: wrap;
@@ -1893,12 +1867,10 @@ a {
 		margin-top: 10px;
 	}
 
-	/* ==== (REALIZATION) ==== */
 	.realization {
 		display: none;
 	}
 
-	/* ==== (OFFER) ==== */
 	.offer {
 		width: 100%;
 		min-height: 120px;
@@ -1924,7 +1896,6 @@ a {
 		padding: 10px 10px;
 	}
 
-	/* ==== (PROJECTS) ==== */
 	.projects {
 		padding: 60px 0;
 	}
@@ -1971,7 +1942,6 @@ a {
 		background-color: #a89482;
 	}
 
-	/* ==== (PRESENTATION) ==== */
 	.presentation {
 		width: 100%;
 		height: 211px;
@@ -1991,15 +1961,8 @@ a {
 
 	.video-btn {
 		margin-bottom: 10px;
-		opacity: 1;
 		width: 85px;
 		height: 85px;
-	}
-
-	.video-btn:active {
-		outline: none;
-		-webkit-box-shadow: 0 0 3px 3px #ffffff;
-		box-shadow: 0 0 3px 3px #ffffff;
 	}
 
 	.video-cover {
@@ -2017,7 +1980,6 @@ a {
 		background: rgba(0, 0, 0, 0.616);
 	}
 
-	/* ==== (DEVICES) ==== */
 	.devices {
 		padding: 60px 0;
 		width: 100%;
@@ -2026,9 +1988,6 @@ a {
 
 	.devices-img {
 		display: none;
-		/* margin: 0;
-		width: 40%;
-		height: 100%; */
 	}
 
 	.devices-wrapper {
@@ -2063,12 +2022,10 @@ a {
 		top: 2px;
 	}
 
-	/* ==== (COUNTERS) ==== */
 	.counters {
 		display: none;
 	}
 
-	/* ==== (POSTS) ==== */
 	.posts {
 		padding: 0;
 		padding-bottom: 60px;
@@ -2084,7 +2041,6 @@ a {
 	}
 
 	.posts-row {
-		/* flex-wrap: wrap; */
 		width: 90%;
 		justify-content: space-between;
 	}
@@ -2124,8 +2080,12 @@ a {
 		fill: #998675;
 	}
 
-	.post-btn-icon:active {
+	.post-btn-icon:hover {
 		fill: #c7b299;
+	}
+
+	.post-btn-icon:active {
+		fill: #a8a0a0;
 	}
 
 	.post-link::after {
@@ -2141,7 +2101,6 @@ a {
 		width: 10px;
 	}
 
-	/* ==== (PARTNERS) ==== */
 	.partners {
 		min-height: 107px;
 		padding: 15px 20px;
@@ -2170,8 +2129,6 @@ a {
 		-webkit-filter: none;
 		filter: none;
 	}
-
-	/* ==== (FOOTER) ==== */
 
 	.footer-top-wrapper {
 		min-height: 320px;
@@ -2226,7 +2183,6 @@ a {
 		z-index: 10;
 	}
 
-	/* ==== (FOOTER-BOTTOM) ==== */
 	.footer-bottom-wrapper {
 		padding: 10px 15px;
 		justify-content: space-between;
